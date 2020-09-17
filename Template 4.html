@@ -1,0 +1,1120 @@
+<html>
+
+<head></head>
+
+<body>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://herolister.com/assets/css/templates/bootstrap-3-3-7.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<style type="text/css">
+	.col-other-items h4:after {
+		margin: 10px auto !important;
+	}
+
+	.footer-last-p a:after {
+		content: "HEROLISTER.COM";
+	}
+
+	.after-main-container {
+		display: none;
+	}
+
+	.logo-text {
+		color: #fff
+	}
+
+	a {
+		color: #b73535;
+	}
+
+	a:hover {
+		color: #a82626;
+	}
+
+	#template-container p a {
+		color: #fff;
+	}
+
+	@import url(https://fonts.googleapis.com/css?family=Roboto);
+	/*bootstrap snippet repair width */
+	/* GLOBAL–––––––––––––––––––––––– */
+
+	#template-container {
+		background: #fff;
+		font-family: "Roboto", sans-serif;
+	}
+
+	#template-container p {
+		color: #666565;
+		font-size: 15px;
+	}
+	/*delete adding br in ckeditor*/
+
+	br[type|=_moz] {
+		display: none;
+	}
+
+	p,
+	li {
+		font-size: 15px;
+		color: #666565;
+	}
+
+	#template-container h2:after,
+	#template-container h3:after,
+	#template-container h4:after,
+	#template-container h5:after,
+	#template-container h6:after {
+		content: "";
+		display: block;
+		width: 2em;
+		height: 1px;
+		margin: 10px 0 0 0;
+		border-top: solid 2px #9e1c1c;
+	}
+
+	#template-container h2.no-line:after,
+	#template-container h3.no-line:after,
+	#template-container h4.no-line:after,
+	#template-container h5.no-line:after,
+	#template-container h6.no-line:after {
+		display: none;
+	}
+
+	#template-container ul {
+		padding-left: 20px;
+		list-style-type: circle;
+	}
+
+	#template-container ul.features {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	#template-container ul.features li {
+		padding-left: 15px;
+		text-indent: -.7em;
+	}
+
+	#template-container ul.features li::before {
+		content: "\2022";
+		margin-right: 5px;
+		color: #9e1c1c;
+	}
+
+	.margin-auto {
+		margin: auto;
+	}
+
+	.animate-img {
+		transition: transform 0.3s ease-in;
+	}
+
+	.animate-img:hover {
+		transform: scale(1.1);
+	}
+
+	.button,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		display: inline-block;
+		height: 38px;
+		padding: 0 30px;
+		color: #555;
+		text-align: center;
+		font-size: 11px;
+		font-weight: 600;
+		line-height: 38px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		text-decoration: none;
+		white-space: nowrap;
+		background-color: transparent;
+		border-radius: 4px;
+		border: 1px solid #9e1c1c;
+		cursor: pointer;
+		box-sizing: border-box;
+		-o-transition: background 0.6s, color 0.6s;
+		-moz-transition: background 0.6s, color 0.6s;
+		-webkit-transition: background 0.6s, color 0.6s;
+		-ms-transition: background 0.6s, color 0.6s;
+		transition: background 0.6s, color 0.6s;
+	}
+
+	.button:hover,
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
+		background: #9e1c1c;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.header-center:after {
+		content: "";
+		display: block;
+		width: 2em;
+		height: 1px;
+		border-top: solid 2px #9e1c1c;
+		margin: 10px auto !important;
+	}
+
+	.col-up-box {
+		background: #fff;
+	}
+
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	/* HEADER–––––––––––––––––––––––– */
+
+	#header p {
+		color: #fff;
+	}
+
+	.container-bg {
+		background: #9e1c1c;
+	}
+
+	.top-bar {
+		padding: 20px;
+		background: #b73535;
+		color: #fff;
+	}
+
+	.top-bar .text-box {
+		margin-left: 5px;
+	}
+
+	.top-bar .text-box p:first-child {
+		font-weight: 700;
+	}
+
+	.top-bar .text-box p:last-child {
+		font-weight: 400;
+	}
+
+	.top-bar .text-box,
+	.top-bar .icon-box {
+		display: inline-block;
+	}
+
+	.top-bar .icon-box i {
+		padding: 2px 8px 2px 2px;
+		font-size: 50px;
+	}
+
+	#header .top-bar .col-phone p {
+		font-size: 45px;
+	}
+
+	#header .top-bar .col-phone,
+	.top-bar .col-phone i {
+		font-size: 45px;
+		text-align: right;
+	}
+
+	.col-time {
+		width: 22%
+	}
+
+	.col-mail {
+		width: 28%
+	}
+
+	.top-bar p {
+		margin: 0;
+		color: #fff;
+	}
+
+	.top-bar p span {
+		padding: 0 3px;
+		display: inline-block;
+	}
+
+	.top-bar p i {
+		margin: 0 5px 0 0;
+	}
+
+	.navbar-nav {
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.row-menu,
+	.row-logo {
+		background: #9e1c1c;
+	}
+
+	.col-logo {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.row-logo img {
+		margin: auto;
+	}
+
+	.navbar-nav li::before {
+		content: none;
+	}
+
+	.navbar-nav li a {
+		color: #fff;
+		/*border-bottom: 3px solid #fff;*/
+		-o-transition: border 0.4s, background 0.4s;
+		-moz-transition: border 0.4s, background 0.4s;
+		-webkit-transition: border 0.4s, background 0.4s;
+		-ms-transition: border 0.4s, background 0.4s;
+		transition: border 0.4s, background 0.4s;
+	}
+
+	.nav>li>a:focus,
+	.nav>li>a:hover {
+		background: #393d41;
+	}
+
+	.col-menu {
+		background: #52565a;
+	}
+	/* TITLE–––––––––––––––––––––––– */
+
+	.row-title {
+		padding: 15px 5px;
+	}
+
+	.row-title h1 {
+		text-align: center;
+		/*border-bottom: 1px #9e1c1c solid;*/
+		padding: 0 0 5px 0;
+	}
+
+	.line-break,
+	.line-break-2 {
+		display: block;
+		text-align: center;
+		max-width: 180px;
+		margin: auto;
+		border-bottom: 3px solid #9e1c1c;
+	}
+
+	.line-break-2 {
+		max-width: 580px;
+	}
+
+	.line-break-3 {
+		max-width: 380px;
+	}
+	/* DESC–––––––––––––––––––––––– */
+
+	.col-desc-first {
+		padding-top: 25px;
+	}
+
+	.row-desc {
+		padding: 30px 10px;
+	}
+
+	.row-desc ul {
+		margin: 0;
+		padding: 10px 17px
+	}
+
+	.row-desc ul li {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	.row-desc ul li:before {
+		font-family: "Font Awesome 5 Free";
+		content: "\f111";
+		color: #9e1c1c;
+		padding-right: 10px;
+		font-size: 11px;
+	}
+
+	.col-inner-text {
+		padding: 50px 10px;
+	}
+
+	.container-bg-2 {
+		background: #52565a;
+	}
+
+	.info-box {
+		background: #eee;
+		margin-bottom: 25px;
+	}
+
+	.info-box .info-box-header {
+		border-bottom: 3px solid #9e1c1c;
+		padding: 8px 5px 8px 5px;
+	}
+
+	.info-box .info-box-header h3 {
+		margin: 0 0 0 5px;
+	}
+
+	.info-box .info-box-header h3:after {
+		display: none !important;
+	}
+
+	.info-box .info-box-text {
+		padding: 7px;
+	}
+	/* GALLERY–––––––––––––––––––––––– */
+
+	#gall {
+		height: auto;
+		position: relative;
+		padding-top: 76%;
+	}
+
+	@media screen and (max-width: 550px) {
+		#gall {
+			padding-top: 76%;
+		}
+		#desc {
+			margin-top: 30px;
+		}
+	}
+
+	#gall > img {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		max-height: 98%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		-webkit-transition: opacity 0.5s;
+		transition: opacity 0.5s;
+	}
+
+	#gall label {
+		cursor: pointer;
+		float: left;
+		margin: 14px 0px 4px 14px;
+		opacity: 0.65;
+		-webkit-transition: opacity 0.5s;
+		transition: opacity 0.5s;
+		z-index: 10;
+	}
+
+	#gall label img {
+		display: block;
+		width: 100px;
+		height: 75px;
+	}
+
+	#gall input {
+		display: none;
+	}
+
+	#gall input:checked+label {
+		display: block;
+		opacity: 1;
+	}
+
+	#gall input ~ img {
+		left: -300%;
+		opacity: 0;
+	}
+
+	#gall input:checked+label+img {
+		left: 0;
+		opacity: 1;
+	}
+	/* SPECS–––––––––––––––––––––––– */
+
+	.table tbody tr {
+		border: 0;
+		-webkit-transition: background 0.25s;
+	}
+
+	.table tbody tr td {
+		color: #fff;
+		border-top: 0;
+	}
+
+	.table tbody tr:nth-child(odd) {
+		background: #b73535;
+	}
+
+	.table tbody tr:nth-child(even) {
+		background: #a72e2e;
+	}
+
+	.table tbody tr td:first-child {
+		font-weight: 700;
+		text-align: right;
+	}
+
+	.table-hover tbody tr:hover {
+		background: #9e1c1c;
+		-webkit-transition: background 0.25s;
+	}
+	/* TAB SECTION–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+	.benefit-header {
+		margin-bottom: 10px;
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	.tab-box {
+		margin: 0 auto;
+		padding: 20px 15px;
+		text-align: left;
+		background-color: #fff;
+		text-align: center;
+	}
+
+	.tab-box h1:before,
+	.tab-box h2:before,
+	.tab-box h3:before,
+	.tab-box h4:before,
+	.tab-box h5:before,
+	.tab-box h6:before {
+		content: none;
+	}
+
+	.tab-box section {
+		display: none;
+		text-align: left;
+		color: #111;
+	}
+
+	.tab-box input {
+		display: none;
+	}
+
+	.tab-box label {
+		line-height: 1.6;
+		display: inline-block;
+		padding: 5px 10px;
+		font-weight: 500;
+		text-align: left;
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+		background: #b73535;
+		color: #fff;
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+
+	.tab-box label i {
+		margin-right: 5px;
+	}
+
+	.tab-box label:first-of-type {
+		margin-left: 0;
+	}
+
+	.tab-box label:hover {
+		cursor: pointer;
+		background-color: #9e1c1c;
+		-webkit-transition: all .5s;
+		transform: all .5s;
+	}
+
+	.tab-box input:checked + label {
+		color: #fff;
+		/*background-color: #fff;*/
+		background-color: #9e1c1c;
+		-webkit-transition: all .5s;
+		transform: all .5s;
+	}
+
+	.tab-box .box-logo {
+		padding: 5px 0 0 0;
+	}
+
+	.tab-box #tab1:checked ~ #content-1,
+	.tab-box #tab2:checked ~ #content-2,
+	.tab-box #tab3:checked ~ #content-3,
+	.tab-box #tab4:checked ~ #content-4 {
+		display: block;
+	}
+
+	.animation {
+		margin-top: 15px;
+		animation-duration: 0.5s;
+		animation-fill-mode: both;
+	}
+
+	@keyframes opacity {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			margin-top: 0;
+			opacity: 1;
+		}
+	}
+
+	.opacity {
+		animation-name: opacity;
+	}
+
+	@media screen and (max-width: 650px) {
+		.tab-box label {
+			margin: 10px auto 10px auto;
+			position: static;
+		}
+		.tab-box label:first-of-type {
+			margin-left: auto;
+		}
+		#content-1,
+		#content-2,
+		#content-3,
+		#content-4 {
+			position: static;
+			top: 0;
+		}
+	}
+
+	@media screen and (max-width: 475px) {
+		.tab-box section {
+			border-top: 0;
+			padding: 5px 0;
+		}
+	}
+	/* OTHER ITEM–––––––––––––––––––––––– */
+
+	.col-other-item {
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+
+	.col-other-item a {
+		color: #9e1c1c;
+	}
+
+	.col-margin {
+		margin: 40px 0;
+	}
+	/* WHY US–––––––––––––––––––––––– */
+
+	.why-col {
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.why-col .why-box-icon {
+		color: #fff;
+		width: 110px;
+		height: 110px;
+		line-height: 110px;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		margin: 5px auto;
+		background: #b73535;
+		font-size: 55px;
+		-o-transition: background 0.5s;
+		-moz-transition: background 0.5s;
+		-webkit-transition: background 0.5s;
+		-ms-transition: background 0.5s;
+		transition: background 0.5s;
+	}
+
+	.why-col:hover .why-box-icon {
+		background: #9e1c1c;
+	}
+
+	.why-box-icon i {
+		padding-top: 25px;
+	}
+
+	#template-container .why-col h2:after,
+	#template-container .why-col h3:after,
+	#template-container .why-col h4:after,
+	#template-container .why-col h5:after,
+	#template-container .why-col h6:after {
+		display: none;
+	}
+
+	.why-col h3 {
+		padding: 6px 0 5px 0;
+	}
+
+	.why-col p {
+		color: #fff;
+	}
+	/* FOOTER INFO BOX–––––––––––––––––––––––– */
+
+	.col-payment-logo {
+		text-align: center;
+	}
+
+	.col-payment-logo img {
+		padding: 5px;
+	}
+	/* CATEGORY LINK–––––––––––––––––––––––– */
+
+	.col-category-links {
+		padding: 15px 10px 10px 10px;
+	}
+
+	.category-links {
+		padding: 0;
+		margin-bottom: 0;
+	}
+
+	.category-links li {
+		font-size: 16px;
+		padding: 15px;
+	}
+
+	ul.category-links li:before {
+		content: none;
+	}
+
+	.category-links li a {
+		color: #b73535;
+		-webkit-transition: color 0.25s;
+		transition: color 0.25s;
+	}
+
+	.category-links li:hover a {
+		color: #9e1c1c;
+		text-decoration: underline;
+	}
+	/* FOOTER–––––––––––––––––––––––– */
+
+	#template-container footer {
+		padding: 20px 0;
+		color: #fff;
+		text-align: center;
+		background: #393d41;
+	}
+
+	#template-container footer p.footer-last-p {
+		color: #fff;
+		opacity: 0.5;
+		margin-bottom: 0;
+	}
+	/* MEDIA SCREEN–––––––––––––––––––––––– */
+
+	@media screen and (max-width: 992px) {
+		.col-desc {
+			padding-top: 20px;
+		}
+		.col-info-box {
+			margin-top: 20px;
+		}
+		.info-box {
+			padding-bottom: 10px;
+			margin-bottom: 0;
+		}
+		.navbar-nav>li {
+			float: none;
+			display: inline-block;
+		}
+		.container-bg-2 {
+			background: #ffffff;
+		}
+		.row-menu {
+			background: #52565a;
+		}
+		.row-logo {
+			background: #9e1c1c;
+		}
+		.col-company-info .navbar-nav {
+			float: none !important;
+		}
+		.navbar {
+			text-align: center;
+		}
+		.logo {
+			margin: auto;
+		}
+		.navbar-nav {
+			margin: 8px;
+		}
+		.col-time {
+			width: 100%
+		}
+		.col-mail {
+			width: 100%
+		}
+		.col-time,
+		.col-mail,
+		.col-phone {
+			padding: 5px 0;
+		}
+		#header .top-bar .col-phone,
+		#header .top-bar .col-time,
+		.top-bar .col-mail {
+			text-align: center;
+		}
+		.col-margin {
+			margin: 10px 0;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		#header .top-bar .col-phone,
+		#header .top-bar .col-phone p,
+		#header .top-bar .col-phone i {
+			font-size: 28px;
+		}
+		.navbar-nav {
+			margin: 7.5px 4px;
+		}
+		#header .top-bar {
+			text-align: center;
+		}
+		#header .top-bar p span {
+			display: block;
+		}
+	}
+</style>
+<div id="template-container">
+	<div class="after-main-container">
+		<h1></h1></div>
+	<header id="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 top-bar">
+					<div class="col-md-3 col-time">
+						<div class="icon-box"> <i class="fas fa-map-marker"></i> </div>
+						<div class="text-box">
+							<p>Based in</p>
+							<p>YOUR COUNTRY</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-mail">
+						<div class="icon-box"> <i class="fa fa-fw fa-comments"></i> </div>
+						<div class="text-box">
+							<p>Great service</p>
+							<p>Fast response</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-phone">
+						<div class="icon-box"> <i class="fa fa-fw fa-truck"></i> </div>
+						<div class="text-box">
+							<p>Fast shipping 24h</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row row-logo">
+				<div class="col-xs-12 col-logo text-center">
+					<img class="logo img-responsive" alt="Brand" src="https://herolister.com/assets/ebay-template/img/TU03/example_logo_white.png"> </div>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid container-bg">
+		<div class="row row-menu row-up-box">
+			<div class="col-md-10 col-md-offset-1 col-up-box col-menu">
+				<ul class="nav navbar navbar-nav align-center">
+					<li> <a class="text-uppercase">about us</a> </li>
+					<li> <a class="text-uppercase">feedback</a> </li>
+					<li> <a class="text-uppercase">add us</a> </li>
+					<li> <a class="text-uppercase">contact</a> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid container-bg">
+		<div class="row row-menu row-up-box">
+			<div class="col-md-10 col-md-offset-1 col-up-box col-desc-first">
+				<div class="col-md-8">
+
+					<div id="gall">
+						<input id="pic_0" name="switch" type="radio" checked="checked">
+						<label for="pic_0"><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_2.png"></label><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_2.png">
+						<input id="pic_1" name="switch" type="radio">
+						<label for="pic_1"><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_3.png"></label><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_3.png">
+						<input id="pic_2" name="switch" type="radio">
+						<label for="pic_2"><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_1.png"></label><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_1.png">
+						<input id="pic_3" name="switch" type="radio">
+						<label for="pic_3"><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_4.png"></label><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_4.png">
+						<input id="pic_4" name="switch" type="radio">
+						<label for="pic_4"><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_5.png"></label><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_5.png">
+						<input id="pic_5" name="switch" type="radio">
+						<label for="pic_5"><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_6.png"></label><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_6.png">
+						<input id="pic_6" name="switch" type="radio">
+						<label for="pic_6"><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_7.png"></label><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_7.png">
+						<input id="pic_7" name="switch" type="radio">
+						<label for="pic_7"><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_8.png"></label><img src="https://herolister.com/assets/ebay-template/img/global/gal_pic_example_8.png"> </div>
+					<div class="line-break line-break-4"><span></span></div>
+
+					<div class="clearfix"><span></span></div>
+				</div>
+				<div class="col-md-4 col-info-box">
+					<div class="info-box">
+						<div class="info-box-header">
+							<h3> <i class="fa fa-fw fa-plus" aria-hidden="true"></i> Short description </h3>
+						</div>
+						<div class="info-box-text">
+							<p>Here you can add a short description of your product or any kind information. Suspendisse a pellentesque dui, non felis. <b>Maecenas malesuada</b> elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.</p>
+						</div>
+					</div>
+					<div class="info-box">
+						<div class="info-box-header">
+							<h3> <i class="fas fa-check" aria-hidden="true"></i> Features </h3>
+						</div>
+						<div class="info-box-text">
+							<ul class="features">
+								<li>Here you can add eg features of your product</li>
+								<li>Very easy and fast personalize</li>
+								<li>Responsive Design (desktops, tablets and phones)</li>
+								<li>Flexible and editable</li>
+								<li>Nice look animated effects</li>
+								<li>Compatible with all desktop browsers and mobile browsers</li>
+								<li>Can be used to list any type of product</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="container-fluid container-bg-2">
+		<div class="row row-up-box">
+			<div class="col-md-10 col-md-offset-1 col-up-box col-desc">
+				<div class="col-md-12 text-center">
+					<h1>HERE YOUR PRODUCT NAME</h1>
+					<div class="line-break-2"> <span></span> </div>
+					<div class="tab-box">
+						<input id="tab1" type="radio" name="tabs" checked="">
+						<label for="tab1"><i class="far fa-file-alt"></i>Description </label>
+						<input id="tab2" type="radio" name="tabs">
+						<label for="tab2"><i class="fas fa-truck"></i>Delivery </label>
+						<input id="tab3" type="radio" name="tabs">
+						<label for="tab3"><i class="far fa-money-bill-alt"></i>Payment </label>
+						<input id="tab4" type="radio" name="tabs">
+						<label for="tab4"><i class="fas fa-sync"></i>Returns </label>
+						<section id="content-1">
+							<h4> Your first description title </h4>
+							<p>Lorem ipsum dolor sit amet enim. <b>Etiam ullamcorper</b>. Suspendisse a pellentesque dui, non felis. Maecenas malesuada <b>elit lectus</b> felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.</p>
+							<h4> Your second description title </h4>
+							<p>Lorem ipsum dolor sit amet enim. <b>Etiam ullamcorper</b>. Suspendisse a pellentesque dui, non felis. Maecenas malesuada <b>elit lectus</b> felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.</p>
+							<h4>Features</h4>
+							<ul>
+								<li>Very easy and fast personalize</li>
+								<li>Responsive Design (desktops, tablets and phones)</li>
+								<li>Flexible and editable</li>
+								<li>Nice look animated effects</li>
+								<li>Compatible with all desktop browsers and mobile browsers</li>
+								<li>Can be used to list any type of product</li>
+							</ul>
+						</section>
+						<section id="content-2">
+							<h4>Fast and safe shipping</h4>
+							<p>We know you want to get your item as soon as possible, so we do everything to make it happen. We ship packages quickly from our warehouse. We cooperate with good companies that provide transport services so your parcel arrives quickly and safely to you.</p>
+							<h4>We are sending all over the world:</h4>
+							<ul>
+								<li>Pickup: <strong>FREE</strong></li>
+								<li>Base country: <strong>2,00 USD</strong></li>
+								<li>Europa: <strong>5,00 USD</strong></li>
+								<li>International: <strong>9,00 USD</strong></li>
+							</ul>
+							<div class="box-logo"><img src="https://herolister.com/wp-content/uploads/2019/03/USPS-logo-small.png"><img src="https://herolister.com/assets/ebay-template/img/global/ups_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/dhl_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/australia_post_logo_small.png"><img src="https://herolister.com/wp-content/uploads/2019/04/logo-royal-mail.png"><img src="https://herolister.com/assets/ebay-template/img/global/deutsche_post_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/dpd_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/fedex_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/tnt_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/gls_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/hermes_europe_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/trans_o_flex_logo_small.png"></div>
+						</section>
+						<section id="content-3">
+							<h4>Pay by Paypal wallet or Payment Card</h4>
+							<p>We meet all the standards to provide you with fully secure payment via Paypal. All your order payments are protected by Paypal Buyer Purchase Protection. You can pay by using the paypal wallet or the payment card.</p>
+							<div class="box-logo">
+								<img src="https://herolister.com/assets/ebay-template/img/global/paypal_logo.png">
+								<img src="https://herolister.com/assets/ebay-template/img/global/visa_logo_small.png">
+								<img src="https://herolister.com/assets/ebay-template/img/global/master_card_logo_small.png">
+								<img src="https://herolister.com/assets/ebay-template/img/global/discover_logo_small.png">
+								<img src="https://herolister.com/assets/ebay-template/img/global/american_express_logo_small.png">
+							</div>
+						</section>
+						<section id="content-4">
+							<h4>30-day money-back guarantee</h4>
+							<p>If you are not completely satisfied with the product please do not hesitate to contact us. We will do everything to solve any problem. If you are still unsatisfied, we offer a 30-day money-back guarantee.</p>
+							<p><strong>Please note</strong>: The returned items must be in the original packaging and in the same condition as you received it.</p>
+							<p>Refunds are issued to the payment method used at the time of purchase.</p>
+							<p>If you placed your order from our shop and it was faulty or you received the wrong product, please return it to us within 30 days and we will issue you a full refund or offer a replacement.</p>
+							<p>All returns are inspected..</p>
+							<p><strong>Your satisfaction is our priority.</strong></p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid container-bg-2">
+		<div class="row row-up-box">
+			<div class="col-md-10 col-md-offset-1 col-up-box">
+				<div class="col-xs-12 text-center">
+
+					<h2 class="no-line"> SPECIFICATION </h2>
+					<div class="line-break line-break-3"> <span></span> </div>
+
+					<div class="col-xs-12 col-md-6 col-md-offset-3 col-inner-text">
+						<table class="table table-hover">
+							<tbody>
+
+							<tr>
+								<td> Name: </td>
+								<td> Phone XYZ </td>
+							</tr>
+
+							<tr>
+								<td> Dimensions: </td>
+								<td> L 500mm W 200mm H 300mm </td>
+							</tr>
+
+							<tr>
+								<td> Material: </td>
+								<td> Metal </td>
+							</tr>
+
+							<tr>
+								<td> Warranty: </td>
+								<td> 24 month </td>
+							</tr>
+
+							<tr>
+								<td> Product: </td>
+								<td> New </td>
+							</tr>
+
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid container-bg-2">
+		<div class="row row-up-box">
+			<div class="col-md-10 col-md-offset-1 col-up-box">
+				<div class="col-md-12 text-center">
+
+					<h2 class="no-line"> WHY <b>US</b>? </h2>
+					<div class="line-break line-break-3"> <span></span> </div>
+
+					<div class="col-sm-4 why-col">
+						<div class="why-box-icon"> <i class="fas fa-star"></i> </div>
+						<h3 class="no-line">Best seller</h3>
+						<p>We guarantee high quality products and service.</p>
+					</div>
+
+					<div class="col-sm-4 why-col">
+						<div class="why-box-icon"> <i class="fas fa-comments"></i> </div>
+						<h3 class="no-line">Great service</h3>
+						<p>If you have any questions, feel free to contact! We will respond as soon as possible.</p>
+					</div>
+
+					<div class="col-sm-4 why-col">
+						<div class="why-box-icon"> <i class="fas fa-thumbs-up"></i> </div>
+						<h3 class="no-line">Satisfaction guarantee</h3>
+						<p>We do everything to make you fully satisfied.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid container-bg-2">
+		<div class="row row-up-box">
+			<div class="col-md-10 col-md-offset-1 col-up-box">
+				<div class="col-md-12 text-center">
+					<h2 class="no-line"> OTHER ITEMS </h2>
+					<div class="line-break line-break-3"> <span></span> </div>
+					<div class="col-sm-6 col-md-3 text-center col-other-items"><img class="img-responsive" src="https://herolister.com/assets/ebay-template/img/global/other_pic_4.png">
+						<h4>Title item</h4>
+						<a class="button">SEE</a>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center col-other-items"><img class="img-responsive" src="https://herolister.com/assets/ebay-template/img/global/other_pic_3.png">
+						<h4>Title item</h4>
+						<a class="button">SEE</a>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center col-other-items"><img class="img-responsive" src="https://herolister.com/assets/ebay-template/img/global/other_pic_2.png">
+						<h4>Title item</h4>
+						<a class="button">SEE</a>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center col-other-items"><img class="img-responsive" src="https://herolister.com/assets/ebay-template/img/global/other_pic_1.png">
+						<h4>Title item</h4>
+						<a class="button">SEE</a>
+					</div>
+					<div class="col-xs-12 col-category-links">
+						<ul class="list-inline category-links">
+							<li>
+								<div>CATEGORY:</div>
+							</li>
+							<li><a>Women's Clothing</a></li>
+							<li><a>Men's Clothing</a></li>
+							<li><a>Shoes</a></li>
+							<li><a>Jewelry</a></li>
+							<li><a>Watches</a></li>
+							<li><a>Beauty</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid container-bg-2">
+		<div class="row row-up-box">
+			<div class="col-md-10 col-md-offset-1 col-margin"> </div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<p class="footer-last-p">© USER | designed by
+						<a href="https://herolister.com" target="_blank"></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		var message = "";
+
+		function clickIE() {
+			if (document.all) {
+				(message);
+				return !1
+			}
+		}
+
+		function clickNS(e) {
+			if (document.layers || (document.getElementById && !document.all)) {
+				if (e.which == 2 || e.which == 3) {
+					(message);
+					return !1
+				}
+			}
+		}
+		if (document.layers) {
+			document.captureEvents(Event.MOUSEDOWN);
+			document.onmousedown = clickNS
+		} else {
+			document.onmouseup = clickNS;
+			document.oncontextmenu = clickIE
+		}
+		document.oncontextmenu = new Function("return false")
+	</script>
+</div>
+</body>
+
+</html>
